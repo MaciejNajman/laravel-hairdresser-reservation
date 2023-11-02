@@ -24,5 +24,13 @@ class Admin extends Seeder
             'remember_token' => Str::random(10),
             'is_admin' => 1
         ]);
+        User::create([
+            'name' => 'Maciek',
+            'email' => 'maciek@qa.qa',
+            'email_verified_at' => now(),
+            'password' => 'maciek123',
+            'remember_token' => Str::random(10),
+            'is_admin' => 1
+        ]);
     }
 }
