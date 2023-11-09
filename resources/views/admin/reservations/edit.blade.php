@@ -21,7 +21,7 @@
                             <div class="mt-1">
                                 <input type="text" id="first_name" name="first_name"
                                     value="{{ $reservation->first_name }}"
-                                    class="block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
+                                    class="block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('name') border-red-400 @enderror" />
                             </div>
                             @error('first_name')
                                 <div class="text-sm text-red-400">{{ $message }}</div>
@@ -32,7 +32,7 @@
                             <div class="mt-1">
                                 <input type="text" id="last_name" name="last_name"
                                     value="{{ $reservation->last_name }}"
-                                    class="block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
+                                    class="block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('name') border-red-400 @enderror" />
                             </div>
                             @error('last_name')
                                 <div class="text-sm text-red-400">{{ $message }}</div>
@@ -42,7 +42,7 @@
                             <label for="email" class="block text-sm font-medium text-gray-700"> Email </label>
                             <div class="mt-1">
                                 <input type="email" id="email" name="email" value="{{ $reservation->email }}"
-                                    class="block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
+                                    class="block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('name') border-red-400 @enderror" />
                             </div>
                             @error('email')
                                 <div class="text-sm text-red-400">{{ $message }}</div>
@@ -54,7 +54,7 @@
                             <div class="mt-1">
                                 <input type="text" id="tel_number" name="tel_number"
                                     value="{{ $reservation->tel_number }}"
-                                    class="block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
+                                    class="block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('name') border-red-400 @enderror" />
                             </div>
                             @error('tel_number')
                                 <div class="text-sm text-red-400">{{ $message }}</div>
@@ -66,7 +66,7 @@
                             <div class="mt-1">
                                 <input type="datetime-local" id="res_date" name="res_date"
                                     value="{{ $reservation->res_date->format('Y-m-d\TH:i:s') }}"
-                                    class="block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
+                                    class="block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('name') border-red-400 @enderror" />
                             </div>
                             @error('res_date')
                                 <div class="text-sm text-red-400">{{ $message }}</div>
@@ -78,7 +78,7 @@
                             <div class="mt-1">
                                 <input type="number" id="guest_number" name="guest_number"
                                     value="{{ $reservation->guest_number }}"
-                                    class="block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
+                                    class="block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('name') border-red-400 @enderror" />
                             </div>
                             @error('guest_number')
                                 <div class="text-sm text-red-400">{{ $message }}</div>

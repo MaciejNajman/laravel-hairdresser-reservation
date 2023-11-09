@@ -1,5 +1,13 @@
 <?php
 
+use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Admin\ReservationController;
+use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\MenuController;
+use App\Http\Controllers\Admin\TableController;
+use App\Http\Controllers\Frontend\CategoryController as FrontendCategoryController;
+use App\Http\Controllers\Frontend\MenuController as FrontendMenuController;
+use App\Http\Controllers\Frontend\ReservationController as FrontendReservationController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -39,7 +47,7 @@ Route::middleware(['auth', 'admin'])->name('admin.')->prefix('admin')->group(fun
     Route::resource('/categories', CategoryController::class);
     Route::resource('/menus', MenuController::class);
     Route::resource('/tables', TableController::class);
-    Route::resource('/reservation', ReservationController::class);
+    Route::resource('/reservations', ReservationController::class);
 });
 
 require __DIR__.'/auth.php';
