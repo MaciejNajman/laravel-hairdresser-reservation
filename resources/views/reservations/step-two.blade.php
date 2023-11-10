@@ -17,7 +17,7 @@
                                     Step 2</div>
                             </div>
 
-                            <form method="POST" action="{{ route('reservations.store.step.two') }}">
+                            <form method="POST" action="{{ route('reservations.step.two') }}">
                                 @csrf
                                 <div class="sm:col-span-6 pt-5">
                                     <label for="status" class="block text-sm font-medium text-gray-700">Table</label>

@@ -9,6 +9,7 @@ use App\Http\Controllers\Frontend\CategoryController as FrontendCategoryControll
 use App\Http\Controllers\Frontend\MenuController as FrontendMenuController;
 use App\Http\Controllers\Frontend\ReservationController as FrontendReservationController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\LogoutController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,11 +27,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/categories', [FrontendCategoryController::class, 'index'])->name('categories.index');
-Route::get('/categories/{category}', [FrontendCategoryController::class, 'show'])->name('categories.show');
-Route::get('/menus', [FrontendMenuController::class, 'index'])->name('menus.index');
-Route::get('/reservations/step-one', [FrontendReservationController::class, 'stepOne'])->name('reservations.step.one');
-Route::get('/reservations/step-two', [FrontendReservationController::class, 'stepTwo'])->name('reservations.step.two');
+Route::get('/services', [FrontendCategoryController::class, 'index'])->name('categories.index');
+Route::get('/services/{category}', [FrontendCategoryController::class, 'show'])->name('categories.show');
+Route::get('/priceList', [FrontendMenuController::class, 'index'])->name('menus.index');
+Route::get('/reservation/step-one', [FrontendReservationController::class, 'stepOne'])->name('reservations.step.one');
+Route::get('/reservation/step-two', [FrontendReservationController::class, 'stepTwo'])->name('reservations.step.two');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -40,6 +41,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::post('/logout', [LogoutController::class, 'logout'])->name('logout');
 });
 
 Route::middleware(['auth', 'admin'])->name('admin.')->prefix('admin')->group(function() {
