@@ -18,7 +18,7 @@
         </div>
     </div>
     <!-- End Main Hero Content -->
-    <section class="px-2 py-32 bg-slate-900 md:px-0">
+    <section id="section1" class="px-2 py-32 bg-slate-900 md:px-0">
         <div class="container items-center max-w-6xl px-8 mx-auto xl:px-5">
             <div class="flex flex-wrap items-center sm:-mx-3">
                 <div class="w-full md:w-1/2 md:px-3">
@@ -55,7 +55,7 @@
             </div>
         </div>
     </section>
-    <section class="py-20 bg-slate-800">
+    <section id="section2" class="py-20 bg-slate-800">
         <div class="container items-center max-w-6xl px-4 px-10 mx-auto sm:px-20 md:px-32 lg:px-16">
             <div class="flex flex-wrap items-center -mx-3">
                 <div class="order-1 w-full px-3 lg:w-1/2 lg:order-0">
@@ -104,7 +104,7 @@
             </div>
         </div>
     </section>
-    <section class="pt-4 pb-12 bg-slate-900">
+    <section id="section3" class="pt-4 pb-12 bg-slate-900">
         <div class="my-16 text-center">
             <h2 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
             OPINIE</h2>

@@ -22,7 +22,7 @@
     <div class="bg-gray-800 shadow-md border-b border-slate-600" x-data="{ isOpen: false }">
         <nav class="container px-6 py-8 mx-auto md:flex md:justify-between md:items-center">
             <div class="flex items-center justify-between">
-                <a class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 md:text-2xl hover:text-green-400">
+                <a class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 md:text-3xl">
                     PSY(chic)
                 </a>
                 <!-- Mobile menu button -->
@@ -73,7 +73,7 @@
             <div class="flex flex-wrap justify-center">
                 <ul class="flex items-center space-x-4 text-white">
                     <li><a href="/">Strona główna</a></li>
-                    <li>O nas</li>
+                    <li><a href="/#section1">O nas</a></li>
                     <li>Kontakt</li>
                     <li>Regulamin</li>
                     <li>FAQ</li>
