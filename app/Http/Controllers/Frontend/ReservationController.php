@@ -44,6 +44,7 @@ class ReservationController extends Controller
 
         return to_route('reservations.step.two');
     }
+    
     public function stepTwo(Request $request)
     {
         $reservation = $request->session()->get('reservation');

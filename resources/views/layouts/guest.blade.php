@@ -19,17 +19,16 @@
 </head>
 
 <body>
-    <div class="bg-white shadow-md" x-data="{ isOpen: false }">
+    <div class="bg-gray-800 shadow-md border-b border-slate-600" x-data="{ isOpen: false }">
         <nav class="container px-6 py-8 mx-auto md:flex md:justify-between md:items-center">
             <div class="flex items-center justify-between">
-                <a class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 md:text-2xl hover:text-green-400"
-                    href="#">
+                <a class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 md:text-2xl hover:text-green-400">
                     PSY(chic)
                 </a>
                 <!-- Mobile menu button -->
                 <div @click="isOpen = !isOpen" class="flex md:hidden">
                     <button type="button"
-                        class="text-gray-800 hover:text-gray-400 focus:outline-none focus:text-gray-400"
+                        class="text-grey-300 hover:text-gray-400 focus:outline-none focus:text-gray-400"
                         aria-label="toggle menu">
                         <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
                             <path fill-rule="evenodd"
@@ -42,23 +41,23 @@
 
             <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
             <div :class="isOpen ? 'flex' : 'hidden'"
-                class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0">
-                <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
+                class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0 text-lg">
+                <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 hover:text-green-400"
                     href="/">Strona główna</a>
-                <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
+                <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 hover:text-green-400"
                     href="{{ route('categories.index') }}">Usługi</a>
-                <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
+                <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 hover:text-green-400"
                     href="{{ route('menus.index') }}">Cennik</a>
-                <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
-                    href="{{ route('reservations.step.one') }}">Zarezerwuj</a>
+                <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 hover:text-green-400"
+                    href="{{ route('reservations.step.one') }}">Zarezerwuj wizytę</a>
                 @guest
-                    <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
+                    <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 hover:text-green-400"
                         href="{{ route('login') }}">Zaloguj się</a>
-                    <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
+                    <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 hover:text-green-400"
                         href="{{ route('register') }}">Załóż konto</a>
                 @endguest
                 @auth
-                    <form method="POST" action="{{ route('logout') }}" class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400">
+                    <form method="POST" action="{{ route('logout') }}" class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 hover:text-green-400">
                         @csrf
                         <button type="submit">Wyloguj się</button>
                     </form>
@@ -66,10 +65,10 @@
             </div>
         </nav>
     </div>
-    <div class="font-sans text-gray-900 antialiased min-h-screen">
+    <div class="font-sans text-gray-900 antialiased min-h-screen bg-slate-900">
         {{ $slot }}
     </div>
-    <footer class="bg-gray-800 border-t border-gray-200">
+    <footer class="bg-gray-800 border-t border-slate-600">
         <div class="container flex flex-wrap items-center justify-center px-4 py-8 mx-auto lg:justify-between">
             <div class="flex flex-wrap justify-center">
                 <ul class="flex items-center space-x-4 text-white">

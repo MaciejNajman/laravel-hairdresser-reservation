@@ -9,7 +9,7 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="flex justify-end m-2 p-2">
                 <a href="{{ route('admin.categories.create') }}"
-                    class="px-4 py-2 bg-indigo-500 hover:bg-indigo-700 rounded-lg text-white">New Category</a>
+                    class="px-4 py-2 bg-indigo-500 hover:bg-indigo-700 rounded-lg text-white">Nowa usługa</a>
             </div>
             <div class="flex flex-col">
                 <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -20,18 +20,18 @@
                                     <tr>
                                         <th scope="col"
                                             class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                            Name
+                                            Nazwa
                                         </th>
                                         <th scope="col"
                                             class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                            Image
+                                            Zdjęcie
                                         </th>
                                         <th scope="col"
                                             class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                            Description
+                                            Opis
                                         </th>
                                         <th scope="col" class="relative py-3 px-6">
-                                            <span class="sr-only">Edit</span>
+                                            <span class="sr-only">Edycja</span>
                                         </th>
                                     </tr>
                                 </thead>
@@ -55,15 +55,15 @@
                                                 class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                                 <div class="flex space-x-2">
                                                     <a href="{{ route('admin.categories.edit', $category->id) }}"
-                                                        class="px-4 py-2 bg-green-500 hover:bg-green-700 rounded-lg  text-white">Edit</a>
+                                                        class="px-4 py-2 bg-green-500 hover:bg-green-700 rounded-lg  text-white">Edytuj</a>
                                                     <form
                                                         class="px-4 py-2 bg-red-500 hover:bg-red-700 rounded-lg text-white"
                                                         method="POST"
                                                         action="{{ route('admin.categories.destroy', $category->id) }}"
-                                                        onsubmit="return confirm('Are you sure?');">
+                                                        onsubmit="return confirm('Czy na pewno chcesz usunąć?');">
                                                         @csrf
                                                         @method('DELETE')
-                                                        <button type="submit">Delete</button>
+                                                        <button type="submit">Usuń</button>
                                                     </form>
                                                 </div>
                                             </td>
