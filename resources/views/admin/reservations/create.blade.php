@@ -9,14 +9,14 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="flex m-2 p-2">
                 <a href="{{ route('admin.reservations.index') }}"
-                    class="px-4 py-2 bg-indigo-500 hover:bg-indigo-700 rounded-lg text-white">Reservation Index</a>
+                    class="px-4 py-2 bg-indigo-500 hover:bg-indigo-700 rounded-lg text-white">Wszystkie rezerwacje</a>
             </div>
             <div class="m-2 p-2 bg-slate-100 rounded">
                 <div class="space-y-8 divide-y divide-gray-200 w-1/2 mt-10">
                     <form method="POST" action="{{ route('admin.reservations.store') }}">
                         @csrf
                         <div class="sm:col-span-6">
-                            <label for="first_name" class="block text-sm font-medium text-gray-700"> First Name </label>
+                            <label for="first_name" class="block text-sm font-medium text-gray-700"> Imię </label>
                             <div class="mt-1">
                                 <input type="text" id="first_name" name="first_name"
                                     class="block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('name') border-red-400 @enderror" />
@@ -26,7 +26,7 @@
                             @enderror
                         </div>
                         <div class="sm:col-span-6">
-                            <label for="last_name" class="block text-sm font-medium text-gray-700"> Last Name </label>
+                            <label for="last_name" class="block text-sm font-medium text-gray-700"> Nazwisko </label>
                             <div class="mt-1">
                                 <input type="text" id="last_name" name="last_name"
                                     class="block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('name') border-red-400 @enderror" />
@@ -46,7 +46,7 @@
                             @enderror
                         </div>
                         <div class="sm:col-span-6">
-                            <label for="tel_number" class="block text-sm font-medium text-gray-700"> Phone number
+                            <label for="tel_number" class="block text-sm font-medium text-gray-700"> Numer telefonu
                             </label>
                             <div class="mt-1">
                                 <input type="text" id="tel_number" name="tel_number"
@@ -57,7 +57,7 @@
                             @enderror
                         </div>
                         <div class="sm:col-span-6">
-                            <label for="res_date" class="block text-sm font-medium text-gray-700"> Reservation Date
+                            <label for="res_date" class="block text-sm font-medium text-gray-700"> Data rezerwacji
                             </label>
                             <div class="mt-1">
                                 <input type="datetime-local" id="res_date" name="res_date"
@@ -68,10 +68,10 @@
                             @enderror
                         </div>
                         <div class="sm:col-span-6">
-                            <label for="guest_number" class="block text-sm font-medium text-gray-700"> Guest Number
+                            <label for="guest_number" class="block text-sm font-medium text-gray-700"> Liczba klientów
                             </label>
                             <div class="mt-1">
-                                <input type="number" id="guest_number" name="guest_number"
+                                <input type="number" min="0" id="guest_number" name="guest_number"
                                     class="block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('name') border-red-400 @enderror" />
                             </div>
                             @error('guest_number')
@@ -79,7 +79,7 @@
                             @enderror
                         </div>
                         <div class="sm:col-span-6 pt-5">
-                            <label for="status" class="block text-sm font-medium text-gray-700">Table</label>
+                            <label for="status" class="block text-sm font-medium text-gray-700">Fryzjer</label>
                             <div class="mt-1">
                                 <select id="table_id" name="table_id" class="form-multiselect block w-full mt-1">
                                     @foreach ($tables as $table)
@@ -96,7 +96,7 @@
 
                         <div class="mt-6 p-4">
                             <button type="submit"
-                                class="px-4 py-2 bg-indigo-500 hover:bg-indigo-700 rounded-lg text-white">Store</button>
+                                class="px-4 py-2 bg-indigo-500 hover:bg-indigo-700 rounded-lg text-white">Zapisz</button>
                         </div>
                     </form>
                 </div>

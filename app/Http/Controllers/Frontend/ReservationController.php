@@ -16,8 +16,8 @@ class ReservationController extends Controller
     public function stepOne(Request $request)
     {
         $reservation = $request->session()->get('reservation');
-        $min_date = Carbon::today();
-        $max_date = Carbon::now()->addWeek();
+        $min_date = Carbon::now();
+        $max_date = Carbon::now()->addWeeks(2);
         return view('reservations.step-one', compact('reservation', 'min_date', 'max_date'));
     }
 
@@ -44,6 +44,7 @@ class ReservationController extends Controller
 
         return to_route('reservations.step.two');
     }
+    
     public function stepTwo(Request $request)
     {
         $reservation = $request->session()->get('reservation');
