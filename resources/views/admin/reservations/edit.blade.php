@@ -11,87 +11,88 @@
                 <a href="{{ route('admin.reservations.index') }}"
                     class="px-4 py-2 bg-indigo-500 hover:bg-indigo-700 rounded-lg text-white">Wszystkie rezerwacje</a>
             </div>
-            <div class="m-2 p-2 bg-slate-100 rounded">
+            <div class="m-2 p-2 rounded bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                 <div class="space-y-8 divide-y divide-gray-200 w-1/2 mt-10">
                     <form method="POST" action="{{ route('admin.reservations.update', $reservation->id) }}">
                         @csrf
                         @method('PUT')
                         <div class="sm:col-span-6">
-                            <label for="first_name" class="block text-sm font-medium text-gray-700"> Imię </label>
+                            <label for="first_name" class="block text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white"> Imię </label>
                             <div class="mt-1">
                                 <input type="text" id="first_name" name="first_name"
                                     value="{{ $reservation->first_name }}"
-                                    class="block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('name') border-red-400 @enderror" />
+                                    class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm block mt-1 w-full @error('name') border-red-400 @enderror" />
                             </div>
                             @error('first_name')
                                 <div class="text-sm text-red-400">{{ $message }}</div>
                             @enderror
                         </div>
                         <div class="sm:col-span-6">
-                            <label for="last_name" class="block text-sm font-medium text-gray-700"> Nazwisko </label>
+                            <label for="last_name" class="block text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white"> Nazwisko </label>
                             <div class="mt-1">
                                 <input type="text" id="last_name" name="last_name"
                                     value="{{ $reservation->last_name }}"
-                                    class="block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('name') border-red-400 @enderror" />
+                                    class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm block mt-1 w-full @error('name') border-red-400 @enderror" />
                             </div>
                             @error('last_name')
                                 <div class="text-sm text-red-400">{{ $message }}</div>
                             @enderror
                         </div>
                         <div class="sm:col-span-6">
-                            <label for="email" class="block text-sm font-medium text-gray-700"> Email </label>
+                            <label for="email" class="block text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white"> Email </label>
                             <div class="mt-1">
                                 <input type="email" id="email" name="email" value="{{ $reservation->email }}"
-                                    class="block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('name') border-red-400 @enderror" />
+                                    class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm block mt-1 w-full @error('name') border-red-400 @enderror" />
                             </div>
                             @error('email')
                                 <div class="text-sm text-red-400">{{ $message }}</div>
                             @enderror
                         </div>
                         <div class="sm:col-span-6">
-                            <label for="tel_number" class="block text-sm font-medium text-gray-700"> Numer telefonu
+                            <label for="tel_number" class="block text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white"> Numer telefonu
                             </label>
                             <div class="mt-1">
                                 <input type="text" id="tel_number" name="tel_number"
                                     value="{{ $reservation->tel_number }}"
-                                    class="block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('name') border-red-400 @enderror" />
+                                    class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm block mt-1 w-full @error('name') border-red-400 @enderror" />
                             </div>
                             @error('tel_number')
                                 <div class="text-sm text-red-400">{{ $message }}</div>
                             @enderror
                         </div>
                         <div class="sm:col-span-6">
-                            <label for="res_date" class="block text-sm font-medium text-gray-700"> Data rezerwacji
+                            <label for="res_date" class="block text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white"> Data rezerwacji
                             </label>
                             <div class="mt-1">
                                 <input type="datetime-local" id="res_date" name="res_date"
                                     value="{{ $reservation->res_date->format('Y-m-d\TH:i:s') }}"
-                                    class="block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('name') border-red-400 @enderror" />
+                                    class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm block mt-1 w-full @error('name') border-red-400 @enderror" />
                             </div>
                             @error('res_date')
                                 <div class="text-sm text-red-400">{{ $message }}</div>
                             @enderror
                         </div>
                         <div class="sm:col-span-6">
-                            <label for="guest_number" class="block text-sm font-medium text-gray-700"> Liczba klientów
+                            <label for="guest_number" class="block text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white"> Liczba klientów
                             </label>
                             <div class="mt-1">
                                 <input type="number" min="0" id="guest_number" name="guest_number"
                                     value="{{ $reservation->guest_number }}"
-                                    class="block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('name') border-red-400 @enderror" />
+                                    class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm block mt-1 w-full @error('name') border-red-400 @enderror" />
                             </div>
                             @error('guest_number')
                                 <div class="text-sm text-red-400">{{ $message }}</div>
                             @enderror
                         </div>
                         <div class="sm:col-span-6 pt-5">
-                            <label for="status" class="block text-sm font-medium text-gray-700">Fryzjer</label>
+                            <label for="status" class="block text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">Fryzjer</label>
                             <div class="mt-1">
-                                <select id="table_id" name="table_id" class="form-multiselect block w-full mt-1">
+                                <select id="table_id" name="table_id" class="form-multiselect block w-full mt-1
+                                border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-white focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm">
                                     @foreach ($tables as $table)
                                         <option value="{{ $table->id }}" @selected($table->id == $reservation->table_id)>
                                             {{ $table->name }}
-                                            ({{ $table->guest_number }} Guests)
+                                            ({{ $table->guest_number }} klient)
                                         </option>
                                     @endforeach
                                 </select>

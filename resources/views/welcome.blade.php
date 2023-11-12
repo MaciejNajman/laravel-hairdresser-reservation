@@ -110,7 +110,7 @@
             OPINIE</h2>
             <p class="text-xl text-gray-300">Opinie klientów na temat jakości naszych usług.</p>
         </div>
-        <div class="grid gap-2 lg:grid-cols-3 ml-5">
+        <div class="flex flex-wrap items-center gap-20 justify-center sm:-mx-3">
             <div class="max-w-md p-4 bg-slate-700 rounded-lg shadow-lg">
                 <div class="flex justify-center -mt-16 md:justify-end">
                     <img class="object-cover w-20 h-20 border-2 border-green-500 rounded-full"

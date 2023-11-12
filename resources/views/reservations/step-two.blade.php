@@ -22,7 +22,7 @@
                                 <div class="sm:col-span-6 pt-5">
                                     <label for="status" class="block text-sm font-medium text-gray-300">Fryzjer</label>
                                     <div class="mt-1">
-                                        <select id="table_id" name="fryzjer"
+                                        <select id="table_id" name="table_id"
                                             class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm block mt-1 w-full">
                                             @foreach ($tables as $table)
                                                 <option value="{{ $table->id }}" @selected($table->id == $reservation->table_id)>
@@ -32,7 +32,7 @@
                                             @endforeach
                                         </select>
                                     </div>
-                                    <span class="text-xs text-gray-300">W przypadku braku możliwości wyboru fryzjera proszę wybrać inny termin wizyty.</span>
+                                    <span class="text-xs text-gray-300">W przypadku braku możliwości wyboru fryzjera proszę wybrać inną godzinę wizyty.</span>
                                     @error('table_id')
                                         <div class="text-sm text-red-400">{{ $message }}</div>
                                     @enderror

@@ -30,7 +30,7 @@ class ReservationController extends Controller
      */
     public function create()
     {
-        $tables = Table::where('status', TableStatus::Avalaiable)->get();
+        $tables = Table::where('status', TableStatus::Dostępny)->get();
         return view('admin.reservations.create', compact('tables'));
     }
 
@@ -48,7 +48,7 @@ class ReservationController extends Controller
         }
         $request_date = Carbon::parse($request->res_date);
         foreach ($table->reservations as $res) {
-            if ($res->res_date->format('Y-m-d') == $request_date->format('Y-m-d')) {
+            if ($res->res_date->format('Y-m-d\TH') == $request_date->format('Y-m-d\TH')) {
                 return back()->with('warning', 'This table is reserved for this date.');
             }
         }
@@ -76,7 +76,7 @@ class ReservationController extends Controller
      */
     public function edit(Reservation $reservation)
     {
-        $tables = Table::where('status', TableStatus::Avalaiable)->get();
+        $tables = Table::where('status', TableStatus::Dostępny)->get();
         return view('admin.reservations.edit', compact('reservation', 'tables'));
     }
 
@@ -96,7 +96,7 @@ class ReservationController extends Controller
         $request_date = Carbon::parse($request->res_date);
         $reservations = $table->reservations()->where('id', '!=', $reservation->id)->get();
         foreach ($reservations as $res) {
-            if ($res->res_date->format('Y-m-d') == $request_date->format('Y-m-d')) {
+            if ($res->res_date->format('Y-m-d\TH') == $request_date->format('Y-m-d\TH')) {
                 return back()->with('warning', 'This table is reserved for this date.');
             }
         }
@@ -115,6 +115,6 @@ class ReservationController extends Controller
     {
         $reservation->delete();
 
-        return to_route('admin.reservations.index')->with('warning', 'Reservation deleted successfully.');
+        return to_route('admin.reservations.index')->with('danger', 'Reservation deleted successfully.');
     }
 }
