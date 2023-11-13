@@ -49,9 +49,9 @@ class ReservationController extends Controller
     {
         $reservation = $request->session()->get('reservation');
         $res_table_ids = Reservation::orderBy('res_date')->get()->filter(function ($value) use ($reservation) {
-            return $value->res_date->format('Y-m-d') == $reservation->res_date->format('Y-m-d');
+            return $value->res_date->format('Y-m-d\TH') == $reservation->res_date->format('Y-m-d\TH');
         })->pluck('table_id');
-        $tables = Table::where('status', TableStatus::Avalaiable)
+        $tables = Table::where('status', TableStatus::Dostępny)
             ->where('guest_number', '>=', $reservation->guest_number)
             ->whereNotIn('id', $res_table_ids)->get();
         return view('reservations.step-two', compact('reservation', 'tables'));

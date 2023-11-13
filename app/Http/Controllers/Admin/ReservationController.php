@@ -30,7 +30,7 @@ class ReservationController extends Controller
      */
     public function create()
     {
-        $tables = Table::where('status', TableStatus::Avalaiable)->get();
+        $tables = Table::where('status', TableStatus::Dostępny)->get();
         return view('admin.reservations.create', compact('tables'));
     }
 
@@ -44,17 +44,17 @@ class ReservationController extends Controller
     {
         $table = Table::findOrFail($request->table_id);
         if ($request->guest_number > $table->guest_number) {
-            return back()->with('warning', 'Please choose the table base on guests.');
+            return back()->with('warning', 'Proszę wybrać fryzjera, który może obsłużyć daną liczbę klientów.');
         }
         $request_date = Carbon::parse($request->res_date);
         foreach ($table->reservations as $res) {
-            if ($res->res_date->format('Y-m-d') == $request_date->format('Y-m-d')) {
-                return back()->with('warning', 'This table is reserved for this date.');
+            if ($res->res_date->format('Y-m-d\TH') == $request_date->format('Y-m-d\TH')) {
+                return back()->with('warning', 'Ten fryzjer jest zarezerwowany. Proszę podać inną datę.');
             }
         }
         Reservation::create($request->validated());
 
-        return to_route('admin.reservations.index')->with('success', 'Reservation created successfully.');
+        return to_route('admin.reservations.index')->with('success', 'Rezerwacja została utworzona pomyślnie.');
     }
 
     /**
@@ -76,7 +76,7 @@ class ReservationController extends Controller
      */
     public function edit(Reservation $reservation)
     {
-        $tables = Table::where('status', TableStatus::Avalaiable)->get();
+        $tables = Table::where('status', TableStatus::Dostępny)->get();
         return view('admin.reservations.edit', compact('reservation', 'tables'));
     }
 
@@ -91,18 +91,18 @@ class ReservationController extends Controller
     {
         $table = Table::findOrFail($request->table_id);
         if ($request->guest_number > $table->guest_number) {
-            return back()->with('warning', 'Please choose the table base on guests.');
+            return back()->with('warning', 'Proszę wybrać fryzjera, który może obsłużyć daną liczbę klientów.');
         }
         $request_date = Carbon::parse($request->res_date);
         $reservations = $table->reservations()->where('id', '!=', $reservation->id)->get();
         foreach ($reservations as $res) {
-            if ($res->res_date->format('Y-m-d') == $request_date->format('Y-m-d')) {
-                return back()->with('warning', 'This table is reserved for this date.');
+            if ($res->res_date->format('Y-m-d\TH') == $request_date->format('Y-m-d\TH')) {
+                return back()->with('warning', 'Ten fryzjer jest zarezerwowany. Proszę podać inną datę.');
             }
         }
 
         $reservation->update($request->validated());
-        return to_route('admin.reservations.index')->with('success', 'Reservation updated successfully.');
+        return to_route('admin.reservations.index')->with('success', 'Rezerwacja została utworzona pomyślnie.');
     }
 
     /**
@@ -115,6 +115,6 @@ class ReservationController extends Controller
     {
         $reservation->delete();
 
-        return to_route('admin.reservations.index')->with('warning', 'Reservation deleted successfully.');
+        return to_route('admin.reservations.index')->with('danger', 'Rezerwacja została usunięta pomyślnie.');
     }
 }
