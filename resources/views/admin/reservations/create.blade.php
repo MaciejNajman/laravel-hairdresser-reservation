@@ -18,7 +18,7 @@
                         <div class="sm:col-span-6">
                             <label for="first_name" class="block text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white"> Imię </label>
                             <div class="mt-1">
-                                <input type="text" id="first_name" name="first_name"
+                                <input type="text" id="first_name" name="first_name" required
                                     class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm block mt-1 w-full @error('name') border-red-400 @enderror" />
                             </div>
                             @error('first_name')
@@ -28,7 +28,7 @@
                         <div class="sm:col-span-6">
                             <label for="last_name" class="block text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white"> Nazwisko </label>
                             <div class="mt-1">
-                                <input type="text" id="last_name" name="last_name"
+                                <input type="text" id="last_name" name="last_name" required
                                     class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm block mt-1 w-full @error('name') border-red-400 @enderror" />
                             </div>
                             @error('last_name')
@@ -38,7 +38,7 @@
                         <div class="sm:col-span-6">
                             <label for="email" class="block text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white"> Email </label>
                             <div class="mt-1">
-                                <input type="email" id="email" name="email"
+                                <input type="email" id="email" name="email" required
                                     class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm block mt-1 w-full @error('name') border-red-400 @enderror" />
                             </div>
                             @error('email')
@@ -49,9 +49,10 @@
                             <label for="tel_number" class="block text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white"> Numer telefonu
                             </label>
                             <div class="mt-1">
-                                <input type="text" id="tel_number" name="tel_number"
+                                <input type="tel" id="tel_number" name="tel_number" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" required
                                     class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm block mt-1 w-full @error('name') border-red-400 @enderror" />
                             </div>
+                            <span class="text-xs text-gray-300">Format: 123 456 789</span>
                             @error('tel_number')
                                 <div class="text-sm text-red-400">{{ $message }}</div>
                             @enderror
@@ -60,7 +61,7 @@
                             <label for="res_date" class="block text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white"> Data rezerwacji
                             </label>
                             <div class="mt-1">
-                                <input type="datetime-local" id="res_date" name="res_date"
+                                <input type="datetime-local" id="res_date" name="res_date" required
                                     class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm block mt-1 w-full @error('name') border-red-400 @enderror" />
                             </div>
                             @error('res_date')
@@ -71,7 +72,7 @@
                             <label for="guest_number" class="block text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white"> Liczba klientów
                             </label>
                             <div class="mt-1">
-                                <input type="number" min="0" id="guest_number" name="guest_number"
+                                <input type="number" min="1" max="2" id="guest_number" name="guest_number" required
                                     class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm block mt-1 w-full @error('name') border-red-400 @enderror" />
                             </div>
                             @error('guest_number')
