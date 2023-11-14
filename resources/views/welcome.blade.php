@@ -118,11 +118,9 @@
                 </div>
                 <div>
                     <h2 class="text-3xl font-semibold text-gray-400">STRZYŻENIE</h2>
-                    <p class="mt-2 text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores
-                        deserunt
-                        ea doloremque natus error, rerum quas odio quaerat nam ex commodi hic, suscipit in a veritatis
-                        pariatur
-                        minus consequuntur!</p>
+                    <p class="mt-2 text-gray-300">Niestety porażka. Pani fryzjerka bardzo sympatyczna w rozmowie, ale strzyżenie wyszło fatalnie.
+                        Fakt, że włosy nie są układane codziennie na szczotce, też nie został uwzględniony przez fryzjerkę. Stare przysłowie, co tanio to drogo. Poprawka u innego fryzjera.
+                    </p>
                 </div>
                 <div class="flex justify-end mt-4">
                     <a class="text-xl font-medium text-green-500">Tomasz Kowalski</a>
@@ -135,11 +133,8 @@
                 </div>
                 <div>
                     <h2 class="text-3xl font-semibold text-gray-400">PAKIET ŚLUBNY</h2>
-                    <p class="mt-2 text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores
-                        deserunt
-                        ea doloremque natus error, rerum quas odio quaerat nam ex commodi hic, suscipit in a veritatis
-                        pariatur
-                        minus consequuntur!</p>
+                    <p class="mt-2 text-gray-300">Doskonała stylizacja na ślub. Zadbano o najmniejsze szczegóły. Jestem bardzo zadowolona. Nie mogłam wybrać lepiej.
+                        Polecam wszystkim!</p>
                 </div>
                 <div class="flex justify-end mt-4">
                     <a class="text-xl font-medium text-green-500">Agnieszka Król</a>
@@ -152,11 +147,8 @@
                 </div>
                 <div>
                     <h2 class="text-3xl font-semibold text-gray-400">STRZYŻENIE DAMSKIE</h2>
-                    <p class="mt-2 text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores
-                        deserunt
-                        ea doloremque natus error, rerum quas odio quaerat nam ex commodi hic, suscipit in a veritatis
-                        pariatur
-                        minus consequuntur!</p>
+                    <p class="mt-2 text-gray-300">Pierwszy raz jestem w tym salonie, świetnie dopasowała pani kolor. Jestem bardzo zadowolona.
+                        Pięknie zrobiona dekoloryzacja i farbowanie, bardzo miła atmosfera, serdecznie polecam!!!</p>
                 </div>
                 <div class="flex justify-end mt-4">
                     <a class="text-xl font-medium text-green-500">Julia Nowak</a>
