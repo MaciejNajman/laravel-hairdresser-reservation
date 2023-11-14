@@ -137,7 +137,7 @@
                         Polecam wszystkim!</p>
                 </div>
                 <div class="flex justify-end mt-4">
-                    <a class="text-xl font-medium text-green-500">Agnieszka Król</a>
+                    <a class="text-xl font-medium text-green-500 bottom-2.5" >Agnieszka Król</a>
                 </div>
             </div>
             <div class="max-w-md p-4 bg-slate-700 rounded-lg shadow-lg" style="min-height: 250px;">
