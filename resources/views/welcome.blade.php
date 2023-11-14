@@ -111,36 +111,38 @@
             <p class="text-xl text-gray-300">Opinie klientów na temat jakości naszych usług.</p>
         </div>
         <div class="flex flex-wrap items-center gap-20 justify-center">
-            <div class="max-w-md p-4 bg-slate-700 rounded-lg shadow-lg">
+            <div class="max-w-md p-4 bg-slate-700 rounded-lg shadow-lg" style="position:relative;min-height: 250px;">
                 <div class="flex justify-center -mt-16 md:justify-end" >
                     <img class="object-cover w-20 h-20 border-2 border-green-500 rounded-full"
                         src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80">
                 </div>
                 <div>
                     <h2 class="text-3xl font-semibold text-gray-400">STRZYŻENIE</h2>
-                    <p class="mt-2 text-gray-300">Niestety porażka. Pani fryzjerka bardzo sympatyczna w rozmowie, ale strzyżenie wyszło fatalnie.
+                    <p class="mt-2 text-gray-300" >Niestety porażka. Pani fryzjerka bardzo sympatyczna w rozmowie, ale strzyżenie wyszło fatalnie.
                         Fakt, że włosy nie są układane codziennie na szczotce, też nie został uwzględniony przez fryzjerkę. Stare przysłowie, co tanio to drogo. Poprawka u innego fryzjera.
                     </p>
                 </div>
                 <div class="flex justify-end mt-4">
-                    <a class="text-xl font-medium text-green-500">Tomasz Kowalski</a>
+                    <a class="text-xl font-medium text-green-500" style="  position: absolute;
+  bottom: 20px">Tomasz Kowalski</a>
                 </div>
             </div>
-            <div class="max-w-md p-4 bg-slate-700 rounded-lg shadow-lg" style="min-height: 250px;">
+            <div class="max-w-md p-4 bg-slate-700 rounded-lg shadow-lg" style="position:relative;min-height: 250px;">
                 <div class="flex justify-center -mt-16 md:justify-end">
                     <img class="object-cover w-20 h-20 border-2 border-green-500 rounded-full"
                         src="https://cdn.pixabay.com/photo/2018/01/04/21/15/young-3061652__340.jpg">
                 </div>
                 <div>
                     <h2 class="text-3xl font-semibold text-gray-400">PAKIET ŚLUBNY</h2>
-                    <p class="mt-2 text-gray-300">Doskonała stylizacja na ślub. Zadbano o najmniejsze szczegóły. Jestem bardzo zadowolona. Nie mogłam wybrać lepiej.
+                    <p class="mt-2 text-gray-300">Doskonała stylizacja na ślub. Zadbano o najmniejsze szczegóły. Jestem bardzo zadowolona. Nie mogłam wybrać lepiej. Moje marzenia się spełniły
                         Polecam wszystkim!</p>
                 </div>
                 <div class="flex justify-end mt-4">
-                    <a class="text-xl font-medium text-green-500 bottom-2.5" >Agnieszka Król</a>
+                    <a class="text-xl font-medium text-green-500" style="  position: absolute;
+  bottom: 20px">Agnieszka Król</a>
                 </div>
             </div>
-            <div class="max-w-md p-4 bg-slate-700 rounded-lg shadow-lg" style="min-height: 250px;">
+            <div class="max-w-md p-4 bg-slate-700 rounded-lg shadow-lg" style="position:relative;min-height: 250px;">
                 <div class="flex justify-center -mt-16 md:justify-end">
                     <img class="object-cover w-20 h-20 border-2 border-green-500 rounded-full"
                         src="https://cdn.pixabay.com/photo/2018/01/18/17/48/purchase-3090818__340.jpg">
@@ -151,7 +153,8 @@
                         Pięknie zrobiona dekoloryzacja i farbowanie, bardzo miła atmosfera, serdecznie polecam!!!</p>
                 </div>
                 <div class="flex justify-end mt-4">
-                    <a class="text-xl font-medium text-green-500">Julia Nowak</a>
+                    <a class="text-xl font-medium text-green-500" style="  position: absolute;
+  bottom: 20px">Julia Nowak</a>
                 </div>
             </div>
         </div>
