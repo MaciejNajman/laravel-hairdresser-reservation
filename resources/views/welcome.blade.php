@@ -112,7 +112,7 @@
         </div>
         <div class="flex flex-wrap items-center gap-20 justify-center">
             <div class="max-w-md p-4 bg-slate-700 rounded-lg shadow-lg">
-                <div class="flex justify-center -mt-16 md:justify-end">
+                <div class="flex justify-center -mt-16 md:justify-end" >
                     <img class="object-cover w-20 h-20 border-2 border-green-500 rounded-full"
                         src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80">
                 </div>
@@ -126,7 +126,7 @@
                     <a class="text-xl font-medium text-green-500">Tomasz Kowalski</a>
                 </div>
             </div>
-            <div class="max-w-md p-4 bg-slate-700 rounded-lg shadow-lg">
+            <div class="max-w-md p-4 bg-slate-700 rounded-lg shadow-lg" style="min-height: 250px;">
                 <div class="flex justify-center -mt-16 md:justify-end">
                     <img class="object-cover w-20 h-20 border-2 border-green-500 rounded-full"
                         src="https://cdn.pixabay.com/photo/2018/01/04/21/15/young-3061652__340.jpg">
@@ -140,7 +140,7 @@
                     <a class="text-xl font-medium text-green-500">Agnieszka Król</a>
                 </div>
             </div>
-            <div class="max-w-md p-4 bg-slate-700 rounded-lg shadow-lg">
+            <div class="max-w-md p-4 bg-slate-700 rounded-lg shadow-lg" style="min-height: 250px;">
                 <div class="flex justify-center -mt-16 md:justify-end">
                     <img class="object-cover w-20 h-20 border-2 border-green-500 rounded-full"
                         src="https://cdn.pixabay.com/photo/2018/01/18/17/48/purchase-3090818__340.jpg">
