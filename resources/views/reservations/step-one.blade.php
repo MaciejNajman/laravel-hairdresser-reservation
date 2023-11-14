@@ -82,18 +82,6 @@
                                         <div class="text-sm text-red-400">{{ $message }}</div>
                                     @enderror
                                 </div>
-                                <div class="sm:col-span-6">
-                                    <label for="guest_number" class="block text-sm font-medium text-gray-300"> Liczba klientów
-                                    </label>
-                                    <div class="mt-1">
-                                        <input type="number" min="1" max="2" id="guest_number" name="guest_number" required
-                                            value="{{ $reservation->guest_number ?? '' }}"
-                                            class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm block mt-1 w-full" />
-                                    </div>
-                                    @error('guest_number')
-                                        <div class="text-sm text-red-400">{{ $message }}</div>
-                                    @enderror
-                                </div>
                                 <div class="mt-6 p-4 flex justify-end">
                                     <button type="submit"
                                         class="px-4 py-2 bg-indigo-500 hover:bg-indigo-700 rounded-lg text-white">Dalej</button>

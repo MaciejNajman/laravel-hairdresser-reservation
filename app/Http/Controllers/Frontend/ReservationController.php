@@ -29,7 +29,6 @@ class ReservationController extends Controller
             'email' => ['required', 'email'],
             'res_date' => ['required', 'date', new DateBetween, new TimeBetween],
             'tel_number' => ['required'],
-            'guest_number' => ['required'],
         ]);
 
         if (empty($request->session()->get('reservation'))) {
@@ -52,7 +51,6 @@ class ReservationController extends Controller
             return $value->res_date->format('Y-m-d\TH') == $reservation->res_date->format('Y-m-d\TH');
         })->pluck('table_id');
         $tables = Table::where('status', TableStatus::Dostępny)
-            ->where('guest_number', '>=', $reservation->guest_number)
             ->whereNotIn('id', $res_table_ids)->get();
         return view('reservations.step-two', compact('reservation', 'tables'));
     }
