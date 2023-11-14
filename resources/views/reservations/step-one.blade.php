@@ -58,11 +58,11 @@
                                     <label for="tel_number" class="block text-sm font-medium text-gray-300"> Numer telefonu
                                     </label>
                                     <div class="mt-1">
-                                        <input type="tel" id="tel_number" name="tel_number" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" required
+                                        <input type="tel" id="tel_number" name="tel_number" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required
                                             value="{{ $reservation->tel_number ?? '' }}"
                                             class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm block mt-1 w-full" />
                                     </div>
-                                    <span class="text-xs text-gray-300">Format: 123 456 789</span>
+                                    <span class="text-xs text-gray-300">Format: 123456789</span>
                                     @error('tel_number')
                                         <div class="text-sm text-red-400">{{ $message }}</div>
                                     @enderror
