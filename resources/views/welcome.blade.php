@@ -1,12 +1,12 @@
 <x-guest-layout>
     <!-- Main Hero Content -->
-    <div class="container max-w-lg px-4 py-32 mx-auto text-left bg-center bg-no-repeat bg-cover md:max-w-none md:text-center"
-        style="background-image: url('https://cdn.pixabay.com/photo/2020/05/24/01/50/barber-shop-5212042_1280.jpg')" alt="Background image">
+    <div class="  container max-w-lg px-4 py-32 mx-auto text-left bg-center bg-no-repeat bg-cover md:max-w-none md:text-center"
+        style="background-image: url('https://cdn.pixabay.com/photo/2020/05/24/01/50/barber-shop-5212042_1280.jpg');" alt="Background image">
         <h1
             class="font-mono text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 md:text-center sm:leading-none lg:text-5xl">
-            <span class="inline md:block">Witamy w salonie urody PSY(chic)</span>
+            <span class="inline md:block;">Witamy w salonie urody PSY(chic)</span>
         </h1>
-        <div class="font-mono text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 md:text-center sm:leading-none lg:text-3xl">  
+        <div class=" font-mono text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 md:text-center sm:leading-none lg:text-3xl">  
             Odkryj najlepszy salon urody w okolicy i zarezerwuj wizytę online!   
         </div>
         <div class="flex flex-col items-center mt-12 text-center">
