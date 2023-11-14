@@ -22,7 +22,7 @@
     <div class="bg-gray-800 shadow-md border-b border-slate-600" x-data="{ isOpen: false }">
         <nav class="container px-6 py-8 mx-auto md:flex md:justify-between md:items-center">
             <div class="flex items-center justify-between">
-                <a class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 md:text-3xl" href="/">
+                <a class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 md:text-3xl" href="">
                     PSY(chic)
                 </a>
                 <!-- Mobile menu button -->
