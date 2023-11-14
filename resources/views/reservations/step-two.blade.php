@@ -27,12 +27,11 @@
                                             @foreach ($tables as $table)
                                                 <option value="{{ $table->id }}" @selected($table->id == $reservation->table_id)>
                                                     {{ $table->name }}
-                                                    ({{ $table->guest_number }} klient)
                                                 </option>
                                             @endforeach
                                         </select>
                                     </div>
-                                    <span class="text-xs text-gray-300">W przypadku braku możliwości wyboru fryzjera proszę wybrać inną godzinę wizyty lub zmniejszyć ilość klientów.</span>
+                                    <span class="text-xs text-gray-300">W przypadku braku możliwości wyboru fryzjera proszę wybrać inną godzinę wizyty.</span>
                                     @error('table_id')
                                         <div class="text-sm text-red-400">{{ $message }}</div>
                                     @enderror

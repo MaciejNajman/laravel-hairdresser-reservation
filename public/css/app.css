@@ -1274,6 +1274,7 @@ select:-webkit-autofill:focus {
     -webkit-box-shadow: 0 0 0px 1000px #111827 inset;
     -webkit-transition: background-color 5000s ease-in-out 0s;
     transition: background-color 5000s ease-in-out 0s;
+    caret-color: white;
 }.file\:mr-5::file-selector-button {
   margin-right: 1.25rem;
 }.file\:rounded-md::file-selector-button {
