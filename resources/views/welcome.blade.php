@@ -69,7 +69,7 @@
                         </p>
                         <ul>
                             <li class="flex items-center py-2 space-x-4 xl:py-3">
-                                <svg class="w-8 h-8 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                <svg class="w-8 h-8 text-gray-500" fill="#94a3b8" viewBox="0 0 24 24"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M17.778 1.65a2.35 2.35 0 0 1 2.325 1.898l.025.16.51 4.093 2.4-.533a.75.75 0 0 1 .423 1.435l-.098.03-2.184.484.907 1.365c.142.21.229.45.255.704l.009.154v9.36a1.55 1.55 0 0 1-1.409 1.544l-.141.006h-1.6a1.55 1.55 0 0 1-1.544-1.409l-.006-.141v-1.65H6.35v1.65a1.55 1.55 0 0 1-1.409 1.544l-.141.006H3.2a1.55 1.55 0 0 1-1.544-1.409L1.65 20.8v-9.366a1.55 1.55 0 0 1 .184-.721l.078-.128.908-1.368-2.183-.485a.75.75 0 0 1 .225-1.48l.1.016 2.406.535.504-4.097A2.35 2.35 0 0 1 6.06 1.654l.16-.004h11.557zM4.85 19.15h-1.7v1.65c0 .018.01.034.025.043l.025.007h1.6a.05.05 0 0 0 .043-.025l.007-.025v-1.65zm16 0h-1.7v1.65c0 .018.01.034.025.043l.025.007h1.6a.05.05 0 0 0 .043-.025l.007-.025v-1.65zm-1.282-9.6H4.428l-.024.006-.02.02-1.226 1.842-.008.022v6.21h17.7v-6.211l-.01-.024-1.226-1.843a.052.052 0 0 0-.046-.022zM7.217 12a2.217 2.217 0 1 1 0 4.433 2.217 2.217 0 0 1 0-4.433zm9.333 0a2.217 2.217 0 1 1 0 4.433 2.217 2.217 0 0 1 0-4.433zm-9.333 1.5a.717.717 0 1 0 0 1.433.717.717 0 0 0 0-1.433zm9.333 0a.717.717 0 1 0 0 1.433.717.717 0 0 0 0-1.433zm1.234-10.35H6.21a.85.85 0 0 0-.83.637l-.02.104-.503 4.103a.05.05 0 0 0 .012.04l.016.012.019.004h14.197a.05.05 0 0 0 .038-.017l.01-.018.003-.018-.512-4.103a.852.852 0 0 0-.856-.744z">
@@ -79,14 +79,14 @@
                             </li>
                             <li class="flex items-center py-2 space-x-4 xl:py-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-gray-500" fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    viewBox="0 0 24 24" stroke="#94a3b8">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
                                 <span class="font-medium text-gray-400">Łatwe i szybkie płatności</span>
                             </li>
                             <li class="flex items-center py-2 space-x-4 xl:py-3">
-                                <svg class="w-8 h-8 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                <svg class="w-8 h-8 text-gray-500" fill="#94a3b8" viewBox="0 0 24 24"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path transform="translate(-1 1) translate(0 .15) translate(.8 .8)"
                                         d="M12.2 14.25c1.298 0 2.35 1.052 2.35 2.35s-1.052 2.35-2.35 2.35-2.35-1.052-2.35-2.35 1.052-2.35 2.35-2.35zm0 1.5c-.47 0-.85.38-.85.85s.38.85.85.85.85-.38.85-.85-.38-.85-.85-.85zm0-6.597c2.472 0 4.84.996 6.568 2.762.29.296.285.771-.011 1.061-.296.29-.771.285-1.061-.011-1.447-1.479-3.428-2.312-5.496-2.312-2.068 0-4.05.833-5.496 2.312-.29.296-.765.3-1.06.011-.297-.29-.302-.765-.012-1.06 1.729-1.767 4.096-2.763 6.568-2.763zm0-4.533c3.446 0 6.746 1.39 9.153 3.856.289.297.283.771-.013 1.06-.297.29-.771.284-1.06-.012-2.125-2.177-5.038-3.404-8.08-3.404S6.245 7.347 4.12 9.524c-.289.296-.763.302-1.06.013-.296-.29-.302-.764-.013-1.06C5.454 6.01 8.754 4.62 12.2 4.62zm11.723.395c.297.289.303.764.014 1.06-.289.297-.764.303-1.06.014C16.936.3 7.464.3 1.523 6.09c-.296.29-.771.283-1.06-.014-.29-.296-.283-.771.014-1.06C7-1.342 17.4-1.342 23.923 5.015z">
@@ -104,7 +104,64 @@
             </div>
         </div>
     </section>
-    <section id="section3" class="pt-4 pb-12 bg-slate-900">
+    <section id="section3" class="py-20 bg-slate-900">
+        <div class="container items-center max-w-6xl px-4 px-10 mx-auto sm:px-20 md:px-32 lg:px-16">
+            <div class="flex flex-wrap items-center -mx-3">
+                <div class="order-1 w-full px-3 lg:w-1/2 lg:order-0">
+                    <div class="w-full lg:max-w-md">
+                        <h2 class="mb-4 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
+                            KONTAKT I GODZINY OTWARCIA</h2>
+                        <p class="mb-4 font-medium tracking-tight text-base text-gray-300 xl:mb-6">
+                            Prosimy o kontakt telefoniczny lub mailowy w godzinach pracy salonu urody.
+                            <table class="table-auto w-full shadow-md border-spacing-2 border-separate rounded text-base text-gray-300">
+                                <tr><th style="font-weight: medium">Poniedziałek</th><td>9:00 - 19:00</td></tr>
+                                <tr><th>Wtorek</th><td>9:00 - 19:00</td></tr>
+                                <tr><th>Środa</th><td>9:00 - 19:00</td></tr>
+                                <tr><th>Czwartek</th><td>9:00 - 19:00</td></tr>
+                                <tr><th>Piątek</th><td>9:00 - 19:00</td></tr>
+                                <tr><th>Sobota</th><td>9:00 - 19:00</td></tr>
+                                <tr><th>Niedziela</th><td>9:00 - 19:00</td></tr>
+                            </table>
+                        </p>
+                        <ul>
+                            <li class="flex items-center py-2 space-x-4 xl:py-3">
+                                <svg class="w-8 h-8 text-gray-500" fill="#94a3b8" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.15 0a3.013 3.013 0 0 1 3.008 2.836l.005.177v17.974a3.013 3.013 0 0 1-2.835 3.008L16.15 24H7.013a3.013 3.013 0 0 1-3.008-2.836L4 20.987V3.013A3.013 3.013 0 0 1 6.836.005L7.013 0h9.138zm0 1.506H7.014c-.786 0-1.431.602-1.5 1.37l-.007.137v17.974c0 .786.602 1.431 1.37 1.5l.137.007h9.138c.785 0 1.43-.602 1.5-1.37l.006-.137V3.013c0-.786-.602-1.431-1.37-1.5l-.136-.007zM11.583 19.28a1.155 1.155 0 1 1 0 2.31 1.155 1.155 0 0 1 0-2.31zm1.205-16.87a.753.753 0 0 1 .102 1.5l-.102.006h-2.41a.753.753 0 0 1-.103-1.5l.103-.006h2.41z">
+                                    </path>
+                                </svg>
+                                <span class="font-medium text-gray-400">111 222 333</span>
+                            </li>
+                            <li class="flex items-center py-2 space-x-4 xl:py-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-gray-500" fill="#94a3b8"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19,4H5A3,3,0,0,0,2,7V17a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V7A3,3,0,0,0,19,4Zm-.67,2L12,10.75,5.67,6ZM19,18H5a1,1,0,0,1-1-1V7.25l7.4,5.55a1,1,0,0,0,.6.2,1,1,0,0,0,.6-.2L20,7.25V17A1,1,0,0,1,19,18Z">
+                                </svg>
+                                <span class="font-medium text-gray-400">PSYchic@gmail.com</span>
+                            </li>
+                            <li class="flex items-center py-2 space-x-4 xl:py-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-gray-500" fill="#94a3b8"
+                                    viewBox="0 0 100 100">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M49,18.92A23.74,23.74,0,0,0,25.27,42.77c0,16.48,17,31.59,22.23,35.59a2.45,2.45,0,0,0,3.12,0c5.24-4.12,22.1-19.11,22.1-35.59A23.74,23.74,0,0,0,49,18.92Zm0,33.71a10,10,0,1,1,10-10A10,10,0,0,1,49,52.63Z">
+                                    </path>
+                                </svg>
+                                <span class="font-medium text-gray-400">Fryzowa 10/20, 40-000, Katowice</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-full px-3 mb-12 lg:w-1/2 order-0 lg:order-1 lg:mb-0"><img
+                        class="mx-auto sm:max-w-sm lg:max-w-full"
+                        src="https://cdn.pixabay.com/photo/2019/02/13/10/00/contact-3994018_1280.jpg"
+                        alt="contact">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section4" class="pt-4 pb-12 bg-slate-800">
         <div class="my-16 text-center">
             <h2 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
             OPINIE</h2>
@@ -123,8 +180,7 @@
                     </p>
                 </div>
                 <div class="flex justify-end mt-4">
-                    <a class="text-xl font-medium text-green-500" style="  position: absolute;
-  bottom: 20px">Tomasz Kowalski</a>
+                    <a class="text-xl font-medium text-green-500" style="  position: absolute; bottom: 20px">Tomasz Kowalski</a>
                 </div>
             </div>
             <div class="max-w-md p-4 bg-slate-700 rounded-lg shadow-lg" style="position:relative;min-height: 250px;">
@@ -138,8 +194,7 @@
                         Polecam wszystkim!</p>
                 </div>
                 <div class="flex justify-end mt-4">
-                    <a class="text-xl font-medium text-green-500" style="  position: absolute;
-  bottom: 20px">Agnieszka Król</a>
+                    <a class="text-xl font-medium text-green-500" style="  position: absolute; bottom: 20px">Agnieszka Król</a>
                 </div>
             </div>
             <div class="max-w-md p-4 bg-slate-700 rounded-lg shadow-lg" style="position:relative;min-height: 250px;">
@@ -153,8 +208,7 @@
                         Pięknie zrobiona dekoloryzacja i farbowanie, bardzo miła atmosfera, serdecznie polecam!!!</p>
                 </div>
                 <div class="flex justify-end mt-4">
-                    <a class="text-xl font-medium text-green-500" style="  position: absolute;
-  bottom: 20px">Julia Nowak</a>
+                    <a class="text-xl font-medium text-green-500" style="  position: absolute; bottom: 20px">Julia Nowak</a>
                 </div>
             </div>
         </div>
