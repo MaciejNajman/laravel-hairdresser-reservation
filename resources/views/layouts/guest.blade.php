@@ -42,16 +42,16 @@
             <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
             <div :class="isOpen ? 'flex' : 'hidden'"
                 class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0 text-lg">
-                <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 hover:text-green-400"
+                <a class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 hover:text-green-400"
                     href="{{ route('categories.index') }}">Usługi</a>
-                <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 hover:text-green-400"
+                <a class=" font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 hover:text-green-400"
                     href="{{ route('menus.index') }}">Cennik</a>
-                <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 hover:text-green-400"
+                <a class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 hover:text-green-400"
                     href="{{ route('reservations.step.one') }}">Zarezerwuj wizytę</a>
                 @guest
-                    <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 hover:text-green-400"
+                    <a class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 hover:text-green-400"
                         href="{{ route('login') }}">Zaloguj się</a>
-                    <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 hover:text-green-400"
+                    <a class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 hover:text-green-400"
                         href="{{ route('register') }}">Załóż konto</a>
                 @endguest
                 @auth
